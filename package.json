@@ -1,0 +1,22 @@
+{
+  "name": "cypress-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahesh-Babu789/cypress-practice.git"
+  },
+  "author": "Mahesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahesh-Babu789/cypress-practice/issues"
+  },
+  "homepage": "https://github.com/Mahesh-Babu789/cypress-practice#readme",
+  "dependencies": {
+    "cypress": "^9.4.1"
+  }
+}
