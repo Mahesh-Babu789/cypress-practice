@@ -18,3 +18,8 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+require('cypress-xpath')
+// const {downloadFile} = require('cypress-downloadfile/lib/addPlugin')
+// module.exports = (on, config) => {
+//   on('task', {downloadFile})
+// }
