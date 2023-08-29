@@ -1,1 +1,28 @@
-{}
+{
+    "chromeWebSecurity": false,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080,
+    "pageLoadTimeout": 80000,
+    "ignoreTestFiles": [
+        "**/ignoredTestFiles/*.js",
+        "**.feature",
+        "**.md"
+    ],
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/reports/separate-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+    },
+    "retries": {
+        "runMode": 1
+    },
+    "env": {
+        "userName": "Admin",
+        "password": "admin123",
+        "incorrectUserName": "Adminmmmmmm",
+        "incorrectPassword": "Adminnnnnnn"
+    }
+}
