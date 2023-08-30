@@ -2,16 +2,17 @@ import BasePage from '../../lib/pages/base_page'
 
 const basePage = new BasePage();
 
-beforeEach(() => {    
-    cy.visit('https://opensource-demo.orangehrmlive.com');
-    cy.wait(4000);
-});
-
-afterEach(() => {
-    basePage.closeBrowser();
-})
 
 describe('Login page validation', () => {
+
+    beforeEach(() => {    
+        cy.visit('https://opensource-demo.orangehrmlive.com');
+        cy.wait(4000);
+    });
+    
+    afterEach(() => {
+        basePage.closeBrowser();
+    })
 
     it('login in to the application with valid user details', () => {
         basePage.userLogin(Cypress.env('userName'), Cypress.env('password'))
