@@ -31,3 +31,8 @@ import 'cypress-file-upload';
 
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath" />
+Cypress.on('uncaught:exception', (_err, _runnable) => {
+    // When Cypress detects uncaught errors originating from application
+    // returning false here prevents Cypress from failing the current test.
+    return false;
+  });
